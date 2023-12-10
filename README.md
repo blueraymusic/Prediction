@@ -79,20 +79,22 @@ except:
     print('<-----Could not Visualize the data----->')
 Model Saving and Loading:
 The trained model can be saved using joblib and loaded for future use.
-python
-Copy code
-# Save the trained model
-# joblib.dump(model, 'model_trained.joblib')
 
-# Load the model
-# model = joblib.load('model_trained.joblib')
+
+- python
+
+Save the trained model
+joblib.dump(model, 'model_trained.joblib')
+
+Load the model
+model = joblib.load('model_trained.joblib')
 Stock Data Retrieval:
 Historical stock data is downloaded using the yfinance library and plotted.
 python
 Copy code
-# Get historical stock data
+Get historical stock data
 data = yf.download(ticker, '1980-12-12', '2023-11-17')
 
-# Plot adjusted close price data
+Plot adjusted close price data
 data['Volume'].plot()
 plt.show()
