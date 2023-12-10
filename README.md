@@ -16,14 +16,11 @@ yfinance
 matplotlib
 You can install the required dependencies using the following:
 
-bash
-Copy code
 pip install pandas scikit-learn joblib graphviz yfinance matplotlib
 Usage:
 
-Clone the repository:
-bash
-Copy code
+#Clone the repository:
+
 git clone https://github.com/blueraymusic/Prediction.git
 Install dependencies:
 pip install -r requirements.txt
